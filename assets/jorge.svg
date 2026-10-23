@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 300" role="img" aria-labelledby="title desc">
+  <title id="title">Jorge el Curioso</title>
+  <desc id="desc">Mono curioso con orejas grandes, mirada pícaramente curiosa y camiseta amarilla</desc>
+  <ellipse cx="130" cy="278" rx="80" ry="14" fill="#24302c" opacity=".16"/>
+  <path d="M58 138C38 64 84 16 130 16s92 48 72 122c-10 38-36 62-72 62s-62-24-72-62Z" fill="#7c3f1d"/>
+  <circle cx="52" cy="102" r="28" fill="#7c3f1d"/>
+  <circle cx="208" cy="102" r="28" fill="#7c3f1d"/>
+  <ellipse cx="130" cy="122" rx="54" ry="60" fill="#d18a58"/>
+  <ellipse cx="104" cy="108" rx="12" ry="16" fill="#1f1f1f"/>
+  <ellipse cx="156" cy="108" rx="12" ry="16" fill="#1f1f1f"/>
+  <circle cx="102" cy="104" r="4" fill="#fff"/>
+  <circle cx="154" cy="104" r="4" fill="#fff"/>
+  <path d="M98 98q6 -6 12 0M148 98q6 -6 12 0" fill="none" stroke="#1f1f1f" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="130" cy="138" rx="28" ry="20" fill="#f2bd82"/>
+  <path d="M116 138q14 12 28 0" fill="none" stroke="#2a1a12" stroke-width="5" stroke-linecap="round"/>
+  <path d="M74 178q56 -36 112 0l24 104H50Z" fill="#f6c945" stroke="#2a1a12" stroke-width="6"/>
+  <path d="M98 214l-34 38M162 214l34 38" fill="none" stroke="#7c3f1d" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="60" cy="258" r="16" fill="#7c3f1d"/>
+  <circle cx="200" cy="258" r="16" fill="#7c3f1d"/>
+  <path d="M96 274q34 -22 68 0" fill="none" stroke="#2a1a12" stroke-width="6" stroke-linecap="round"/>
+  <path d="M130 186v32" stroke="#ed5b45" stroke-width="6" stroke-linecap="round"/>
+  <path d="M150 70q20 -28 38 -14" fill="none" stroke="#7c3f1d" stroke-width="14" stroke-linecap="round"/>
+</svg>

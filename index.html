@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6c945">
+  <title>El expediente secreto de Luu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Kalam:wght@400;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="intro-active">
+  <div class="paper-noise"></div>
+  <section class="intro-screen" id="introScreen" aria-label="Introducción de la aventura">
+    <div class="intro-stage intro-white-stage">
+      <div class="intro-paper-grain"></div>
+      <div class="intro-runner" aria-hidden="true"><img src="assets/jorge.svg" alt="Jorge el Curioso"></div>
+      <div class="hatch-shadow"></div>
+      <button class="hatch" id="hatch" aria-label="Abrir trampilla"><!-- ASSET_TRAMPILLA --><span class="hatch-ring"></span></button>
+      <div class="hatch-inside"></div>
+      <p class="intro-caption">algo curioso está a punto de comenzar<span>…</span></p>
+      <div class="curiosity-mark">?</div>
+      <button class="intro-start" id="startIntro">Iniciar intro <span>▶</span></button>
+    </div>
+  </section>
+  <div class="progress-pin" aria-label="Progreso de la investigación"><span id="progressBar"></span></div>
+
+  <main id="casebook" class="casebook">
+    <button class="monkey-secret secret-one" data-message="¡Me encontraste! Llevo horas siguiendo esta pista." aria-label="Jorge escondido"><img src="assets/jorge.svg" alt="Jorge el Curioso"></button>
+    <section class="cover scene" data-scene="cover">
+      <div class="tape tape-yellow"></div>
+      <div class="cover-stamp">EXPEDIENTE<br><strong>007-LUU</strong></div>
+      <div class="cover-copy">
+        <p class="eyebrow">ARCHIVO ULTRA-CURIOSO · 07 OCT</p>
+        <h1>Algo muy<br><em>curioso</em><br>está pasando<span>.</span></h1>
+        <p class="lead">Jorge encontró una misión… y parece que tiene que ver contigo.</p>
+        <button class="action-btn" data-next="map">Descubrir la misión <span>↗</span></button>
+      </div>
+      <div class="hero-monkey" aria-hidden="true"><img src="assets/jorge.svg" alt="Jorge el Curioso"><span>shhh…</span></div>
+      <div class="cover-doodle doodle-star">✦</div>
+      <div class="cover-doodle banana">🍌</div>
+      <p class="hand-note note-cover">abrir con<br>mente curiosa →</p>
+    </section>
+
+    <section class="scene briefing" data-scene="briefing">
+      <div class="scene-heading">
+        <p class="eyebrow">NOTA DE JORGE · 01</p>
+        <h2>La misión<br><em>comienza aquí.</em></h2>
+      </div>
+      <div class="briefing-card tilt-left">
+        <span class="paperclip">⌇</span>
+        <p class="type-label">MENSAJE RECIBIDO</p>
+        <p class="big-quote">“Hoy cumple años<br>una persona<br><mark>muy especial.</mark>”</p>
+        <p>Pero Jorge es curioso. Demasiado curioso. Así que decidió investigar exactamente <u>qué</u> hace tan especial a esa persona.</p>
+        <button class="action-btn dark" data-next="suspect">Comenzar investigación <span>→</span></button>
+      </div>
+      <div class="map-scribble">
+        <span>punto de partida</span><i></i><b>?</b>
+      </div>
+      <div class="branch branch-top">╰┈➤</div>
+      <button class="monkey-secret secret-two" data-message="Shhh, estoy investigando. ¿Has visto mi lupa?" aria-label="Jorge escondido"><img src="assets/jorge.svg" alt="Jorge el Curioso"></button>
+    </section>
+
+    <section class="scene suspect" data-scene="suspect">
+      <div class="file-tab">CASO ABIERTO <span>●</span></div>
+      <div class="suspect-title">
+        <p class="eyebrow">PISTA #1</p>
+        <h2>Encontramos<br>a la sospechosa.</h2>
+        <div class="red-line"></div>
+      </div>
+      <div class="id-card">
+        <div class="id-photo photo-luu"></div>
+        <div class="id-info">
+          <p class="type-label">FICHA DE INVESTIGACIÓN</p>
+          <h3>LUU <small>♡</small></h3>
+          <p><b>Motivo:</b> cumplir años</p>
+          <p><b>Nivel de curiosidad:</b> <span class="stars">★★★★★</span></p>
+          <p><b>Última vez vista:</b> siendo demasiado bonita</p>
+          <span class="official">MUY ESPECIAL<br>CONFIRMADO</span>
+        </div>
+      </div>
+      <div class="evidence-tape">EVIDENCIA A-01</div>
+      <div class="suspect-sticker">no<br>tocar</div>
+      <button class="action-btn" data-next="evidence">Ver más pruebas <span>↗</span></button>
+    </section>
+
+    <section class="scene evidence" data-scene="evidence">
+      <div class="scene-heading evidence-heading">
+        <p class="eyebrow">ARCHIVO FOTOGRÁFICO · 02</p>
+        <h2>Jorge encontró<br><em>más pruebas…</em></h2>
+      </div>
+      <div class="polaroid polaroid-a"><div class="photo photo-one"></div><p>Evidencia 001: se encontró disfrutando de la vida.</p><small>archivo_001.jpg</small></div>
+      <div class="polaroid polaroid-b"><div class="photo photo-two"></div><p>Evidencia 002: claramente no sabe posar para una sola foto.</p><small>archivo_002.jpg</small></div>
+      <div class="polaroid polaroid-c"><div class="photo photo-three"></div><p>Evidencia 003: demasiado bonita para ser considerada evidencia normal.</p><small>archivo_003.jpg</small></div>
+      <div class="evidence-arrow">¡todo apunta<br>a una celebración! ↘</div>
+      <button class="action-btn dark floating-next" data-next="map">Seguir la pista <span>→</span></button>
+      <button class="monkey-secret secret-three" data-message="Creo que necesito una banana para analizar esto." aria-label="Jorge escondido"><img src="assets/jorge.svg" alt="Jorge el Curioso"></button>
+    </section>
+
+    <section class="scene map-scene" data-scene="map">
+      <div class="map-header">
+        <p class="eyebrow">MAPA DE AVENTURAS · 03</p>
+        <h2>Elige tu<br><em>siguiente parada.</em></h2>
+        <p>Esta investigación no tiene un orden correcto. Explora donde quieras.</p>
+      </div>
+      <div class="adventure-map">
+        <svg class="map-route" viewBox="0 0 600 390" aria-hidden="true"><path d="M60 295 C130 80 160 350 270 180 S400 60 520 285" /><path d="M270 180 C380 230 410 180 465 100" /></svg>
+        <button class="map-stop stop-memory" data-stop="memories" data-next="memories"><span>📸</span>Los recuerdos</button>
+        <button class="map-stop stop-moments" data-stop="moments" data-next="moments"><span>✦</span>Los momentos</button>
+        <button class="map-stop stop-playlist" data-stop="playlist" data-next="playlist"><span>♫</span>La playlist</button>
+        <button class="map-stop stop-letter" data-stop="letter" data-next="letter"><span>✉</span>La carta</button>
+        <button class="map-stop stop-birthday" data-stop="birthday" data-next="birthday" style="display:none"><span>🎂</span>El cumple</button>
+        <button class="map-stop stop-secret" data-stop="discovery" data-next="discovery" style="display:none"><span>?</span>Zona secreta</button>
+        <div class="map-tree">🌴</div>
+        <button class="monkey-secret map-monkey" data-message="Encontraste mi escondite secreto. +1 pista." aria-label="Jorge escondido"><img src="assets/jorge.svg" alt="Jorge el Curioso"></button>
+      </div>
+    </section>
+
+    <section class="scene memories" data-scene="memories">
+      <button class="back-map" data-next="map">← volver al mapa</button>
+      <div class="scene-heading"><p class="eyebrow">ESTACIÓN: LOS RECUERDOS</p><h2>Pequeños momentos,<br><em>grandes pistas.</em></h2></div>
+      <div class="memory-grid">
+        <figure class="memory-card memory-main"><div class="photo photo-juntas1"></div><figcaption>“Hay personas que hacen que cualquier día se sienta como una aventura.”</figcaption></figure>
+        <figure class="memory-card memory-side"><div class="photo photo-juntas2"></div><figcaption>archivo de sonrisas</figcaption></figure>
+      </div>
+      <figure class="memory-card memory-note"><p>Nota encontrada entre los papeles:</p><blockquote>“Luu convierte lo cotidiano en algo bonito.”</blockquote><span>— Jorge</span></figure>
+      <button class="action-btn dark" data-next="map">Abrir descubrimiento <span>↗</span></button>
+    </section>
+
+    <section class="scene moments" data-scene="moments">
+      <button class="back-map" data-next="map">← volver al mapa</button>
+      <div class="moments-copy"><p class="eyebrow">ESTACIÓN: LOS MOMENTOS</p><h2>La evidencia<br>más importante.</h2><p class="moment-quote">No es la foto perfecta.<br>Es la risa que pasa<br>mientras nadie posa.</p><div class="scribble-check">☑ ríe mucho<br>☑ hace sentir bien<br>☑ tiene magia propia</div></div>
+      <div class="moment-orbit"><div class="orbit-photo photo-pequena1"></div><div class="orbit-label">momento<br>capturado</div><span>✦</span></div>
+      <button class="action-btn dark" data-next="map">Tengo una teoría <span>→</span></button>
+    </section>
+
+    <section class="scene discovery" data-scene="discovery">
+      <div class="discovery-monkey"><img src="assets/jorge.svg" alt="Jorge el Curioso"></div>
+      <p class="eyebrow">INFORME FINAL DE LA INVESTIGACIÓN</p>
+      <h2>Jorge descubrió<br><em>algo.</em></h2>
+      <div class="discovery-text"><p>Después de investigar muchísimo, Jorge descubrió algo.</p><p>No era una sola cosa.<br>No era una foto.<br>No era un recuerdo.</p><strong>Eras tú.</strong><p>Y probablemente por eso hoy había que hacer algo especial.</p></div>
+      <button class="action-btn" data-next="finale">Celebrar el descubrimiento <span>↗</span></button>
+      <div class="discovery-doodle">✳</div>
+    </section>
+
+    <section class="scene birthday" data-scene="birthday">
+      <div class="confetti" aria-hidden="true">✦　•　✧　•　✦　•　✧　•　✦</div>
+      <div class="balloon balloon-red">🎈</div><div class="balloon balloon-blue">🎈</div><div class="balloon balloon-green">🎈</div>
+      <div class="cake">🎂</div>
+      <p class="eyebrow">MISIÓN ESPECIAL DESBLOQUEADA</p>
+      <h2>¡FELIZ<br><em>CUMPLEAÑOS,</em><br>LUU!</h2>
+      <p>Misión desbloqueada: celebrar un año más de tu vida.</p>
+      <button class="gift-btn" data-next="discovery" aria-label="Abrir regalo"><span>🎁</span><small>Abrir regalo</small></button>
+      <button class="monkey-secret birthday-monkey" data-message="¡Fiesta! ¡Fiesta! Esto merece dos bananas." aria-label="Jorge escondido"><img src="assets/jorge.svg" alt="Jorge el Curioso"></button>
+    </section>
+
+    <section class="scene letter" data-scene="letter">
+      <div class="letter-sheet">
+        <div class="letter-tape"></div>
+        <p class="eyebrow">MENSAJE CONFIDENCIAL · PARA LUU</p>
+        <h2>Para Luu <span>💛</span></h2>
+        <div class="letter-body"><p>Hoy celebro tu vida, tu forma de reírte, de encontrar belleza en los detalles y de hacer que todo se sienta un poquito más especial.</p><p>Ojalá este nuevo año te encuentre rodeada de personas que te quieran bonito, de aventuras inesperadas y de motivos para sonreír sin darte cuenta.</p><p>Gracias por existir exactamente como eres. Esa fue la pista que Jorge nunca dejó de buscar.</p><p class="signature">Con muchísimo cariño,<br><b>alguien que te quiere mucho ✷</b></p></div>
+        <button class="action-btn dark" data-next="map">Continuar la aventura <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="scene playlist" data-scene="playlist">
+      <button class="back-map" data-next="map">← volver al mapa</button>
+      <div class="headphones">♫</div>
+      <p class="eyebrow">ESTACIÓN: LA PLAYLIST</p><h2>Música para<br><em>la aventura.</em></h2><p>Porque toda buena aventura necesita una banda sonora.</p>
+      <div class="playlist-card"><div class="album-art"><img src="assets/fondoplaylist.png" alt="Portada de la playlist"></div><div class="track-list"><div><b>01</b> Sagrario - camino <i>▶</i></div><div><b>02</b> My Promised Land - Josiah Queen <i>▶</i></div><div><b>03</b> El Rey de la Gloria - Hakuna Group Music <i>▶</i></div><div><b>04</b> Ojalá - Hakuna Group Music <i>▶</i></div><div><b>05</b> Cuarto Lugar - Hakuna Group Music <i>▶</i></div><div><b>06</b> Siento - Fruto del Madero <i>▶</i></div><div><b>07</b> Descalzos - Hakuna Group Music <i>▶</i></div><div><b>08</b> Sencillamente - Hakuna Group Music <i>▶</i></div><div><b>09</b> Mirada - Hakuna Group Music <i>▶</i></div><div><b>10</b> Capricho - Hakuna Group Music <i>▶</i></div><div><b>11</b> Baila y Déjate de Historias - Hakuna Group Music <i>▶</i></div><div><b>12</b> Nacidos de lo Alto - Hakuna Group Music <i>▶</i></div><div><b>13</b> Todo - Hakuna Group Music <i>▶</i></div><div><b>14</b> Sueños - Un Corazón <i>▶</i></div><div><b>15</b> Olor a Tostadas - Hakuna Group Music <i>▶</i></div><div><b>16</b> Pluma de Escribano - Hakuna Group Music <i>▶</i></div><div><b>17</b> (Tú) El Único Rey - tuyo <i>▶</i></div><div><b>18</b> De la cabeza al corazón - tuyo <i>▶</i></div><div><b>19</b> Renuévame - Trigo 13, Almu Aguiar <i>▶</i></div><div><b>20</b> Resucitados - Kénosis by RC <i>▶</i></div><div><b>21</b> No Me Soltarás - Mateo 5:14 <i>▶</i></div><div><b>22</b> Ven Señor Jesús - tuyo <i>▶</i></div><div><b>23</b> Amor Abnegado - Colegio Mater Salvatoris Madrid <i>▶</i></div><div><b>24</b> Tu Voluntad - En vivo - Servus Mariae <i>▶</i></div><div><b>25</b> Oceans/La Niña de Tus Ojos/ Here I Am To Worship - AGNES <i>▶</i></div><div><b>26</b> Abrázame Madre - Tina Amell <i>▶</i></div></div></div>
+      <button class="music-btn" id="musicBtn" onclick="window.open('https://open.spotify.com/playlist/2SOdXd1wbTUbAc3I0xhsGl?si=Kgwc8kQpQS6gGyRaMwp9kQ&utm_source=whatsapp&pi=sS7-eJlTQ_i4n','_blank')">♫ Escuchar la playlist completa <span>↗</span></button>
+      <button class="action-btn dark" data-next="map">Volver al mapa <span>→</span></button>
+    </section>
+
+    <section class="scene finale" data-scene="finale">
+      <div class="sun"></div><div class="horizon"></div>
+      <div class="walk-monkey"><img src="assets/jorge.svg" alt="Jorge el Curioso"></div>
+      <p class="eyebrow">ÚLTIMA PÁGINA DEL EXPEDIENTE</p>
+      <h2>MISIÓN<br><em>CUMPLIDA</em> 🐒</h2>
+      <div class="final-list">✓ Jorge investigó<br>✓ encontró las pistas<br>✓ descubrió los recuerdos<br>✓ entregó el regalo<br>✓ confirmó oficialmente que Luu es una persona muy especial</div>
+      <p class="final-message">Feliz cumpleaños, Luu.<br>Espero que este nuevo año venga cargado de aventuras, risas, momentos bonitos y muchas cosas que todavía no has descubierto.<br><b>Nunca dejes de ser curiosa.</b></p>
+      <p class="postscript">P.D.: Jorge ya está buscando su próxima aventura...</p>
+      <button class="restart" data-next="cover">↻ volver a empezar</button>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
